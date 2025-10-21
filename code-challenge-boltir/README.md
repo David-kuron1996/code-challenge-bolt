@@ -51,17 +51,19 @@ bot-battlr/
 - index.html...
 |- src/
 |   - components/
-|   │   - App.js
-|   │   - BotCollection.js
-|   │   - BotCard.js
-|   │   - BotSpecs.js
-|   │   - BotArmyCard.js
-|   │   - YourBotArmy.js
-|   │   - SortBar.js
+|   │   - BotArmyCard.css
+    |   - BotArmyCard.jsx
+|   │   - BotCard.css
+|   |   - BotCard.jsx
+|   │   - BotCollection.css
+|   │   - BotCollection.jsx
+|   │   - YourBotArmy.css
+|   │   - YourBotArmy.jsx
 |   |- App.css
+|   |- App.jsx
 |   |- index.css
 |   |- index.js
-|- db.json
+|   |- db.json
 |- package.json
 |- README.md
 ```
