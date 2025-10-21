@@ -10,7 +10,7 @@ function App() {
 
   // Fetch bots from the server
   useEffect(() => {
-    fetch('http://localhost:8001/bots')
+    fetch('http://localhost:3000/bots')
       .then(response => response.json())
       .then(data => setBots(data))
       .catch(error => console.error('Error fetching bots:', error));
@@ -34,7 +34,7 @@ function App() {
     setArmy(army.filter(bot => bot.id !== botId));
     
     // Remove from server
-    fetch(`http://localhost:8001/bots/${botId}`, {
+    fetch(`http://localhost:3000/bots${botId}`, {
       method: 'DELETE'
     })
     .then(response => {
