@@ -10,7 +10,7 @@ function App() {
 
   // Fetch bots from the server
   useEffect(() => {
-    fetch('http://localhost:3000/bots')
+    fetch('https://json-server-vercel-azure-psi.vercel.app/bots')
       .then(response => response.json())
       .then(data => setBots(data))
       .catch(error => console.error('Error fetching bots:', error));
@@ -34,7 +34,7 @@ function App() {
     setArmy(army.filter(bot => bot.id !== botId));
     
     // Remove from server
-    fetch(`http://localhost:3000/bots${botId}`, {
+    fetch(`https://json-server-vercel-azure-psi.vercel.app/bots${botId}`, {
       method: 'DELETE'
     })
     .then(response => {
